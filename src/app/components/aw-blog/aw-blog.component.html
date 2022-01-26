@@ -1,0 +1,7 @@
+<h2>Blog</h2>
+<aw-blog-form [max]= "300" (addEmitter)= "add($event)"></aw-blog-form>
+<button (click)="expandAll()">Display</button>
+<button (click)="collapseAll()">Collapse</button>
+<ng-container *ngIf="articles">
+    <aw-blog-article *ngFor="let article of articles" [article]="article"></aw-blog-article>
+</ng-container>

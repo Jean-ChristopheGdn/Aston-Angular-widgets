@@ -1,0 +1,25 @@
+.blog-form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+    // &__title {
+
+    // }
+    &__text {
+        border: 1px solid black;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #888;
+        border-radius: 5px;
+        padding: 5px;
+        font: inherit;
+        outline: none;
+    }
+    // &__counter{
+
+    // }
+    &__error {
+        border-color: red;
+    }
+}
