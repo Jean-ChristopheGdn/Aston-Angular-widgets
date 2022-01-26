@@ -1,0 +1,13 @@
+<div class="carousel">
+    <svg class="carousel__btn_left" (click)="onLeft()">
+        <use xlink:href="assets/icomoon/symbol-defs.svg#icon-circle-left"></use>
+    </svg>
+    <ng-container *ngFor="let image of carouselArray; let i = index">
+        <ng-container *ngIf=" i == indexImage">
+            <img class="carousel__image" [src]="image">
+       </ng-container>
+    </ng-container>
+    <svg class="carousel__btn_right" (click)="onRight()">
+        <use xlink:href="assets/icomoon/symbol-defs.svg#icon-circle-right"></use>
+    </svg>
+</div>

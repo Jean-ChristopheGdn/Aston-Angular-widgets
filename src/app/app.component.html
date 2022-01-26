@@ -1,6 +1,8 @@
 <div class="container">
+    <aw-carousel></aw-carousel>
+    <!-- <aw-aw-carousel [images]="slides"></aw-aw-carousel> -->
     <h1 #pageTitle>Angular</h1>
-    <!-- <a href="#">Mon lien</a>
+    <a href="#">Mon lien</a>
     <aw-tags [max]="10"></aw-tags>
     <aw-blog></aw-blog>
     <div class="cards">
@@ -28,16 +30,17 @@
                 <h3>Footer</h3>
             </footer>
         </aw-card>
-    </div> -->
+    </div>
     <aw-panel>
-        <aw-tab name="Tab1" [selected] = "true">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus perspiciatis odit autem nesciunt nobis doloribus.</p>
+        <aw-tab name="Tab1" [selected]="true">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus perspiciatis odit autem nesciunt nobis
+                doloribus.</p>
         </aw-tab>
-        <aw-tab name="Tab2" [selected] = "false">
+        <aw-tab name="Tab2" [selected]="false">
             <p>Lorem ipsum dolor sit.</p>
         </aw-tab>
-        <aw-tab name="Tab3" [selected] = "false">
-            <img src='http://unsplash.it/200/200?random&gravity=center' alt='random image'/>
+        <aw-tab name="Tab3" [selected]="false">
+            <img src='http://unsplash.it/200/200?random&gravity=center' alt='random image' />
         </aw-tab>
     </aw-panel>
 </div>

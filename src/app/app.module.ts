@@ -9,6 +9,8 @@ import { FormsModule } from '@angular/forms';
 import { BlogArticleComponent } from './components/aw-blog-article/blog-article.component';
 import { CardComponent } from './components/card/card.component';
 import { AwTabsModule } from './lib/aw-tabs/aw-tabs.module';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { AwCarouselComponent } from './lib/aw-carousel/aw-carousel.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { AwTabsModule } from './lib/aw-tabs/aw-tabs.module';
     AwBlogComponent,
     AwBlogFormComponent,
     BlogArticleComponent,
-    CardComponent
+    CardComponent,
+    CarouselComponent,
+    AwCarouselComponent,
   ],
   imports: [
     BrowserModule,
