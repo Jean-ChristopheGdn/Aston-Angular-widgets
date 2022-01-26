@@ -1,35 +1,43 @@
 <div class="container">
     <h1 #pageTitle>Angular</h1>
-    <a href="#">Mon lien</a>
+    <!-- <a href="#">Mon lien</a>
     <aw-tags [max]="10"></aw-tags>
     <aw-blog></aw-blog>
     <div class="cards">
         <aw-card title="Title1">
-            <header><h3>Header</h3></header>
+            <header>
+                <h3>Header</h3>
+            </header>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, vero!</p>
-            <footer><h3>Footer</h3></footer>
+            <footer>
+                <h3>Footer</h3>
+            </footer>
         </aw-card>
         <aw-card title="Title2">
-            <img src='http://unsplash.it/300/300?random&gravity=center' alt=''/>
-            <footer><h3>Footer</h3></footer>
+            <img src='http://unsplash.it/300/300?random&gravity=center' alt='' />
+            <footer>
+                <h3>Footer</h3>
+            </footer>
         </aw-card>
         <aw-card title="Title1">
-            <header><h3>Header</h3></header>
+            <header>
+                <h3>Header</h3>
+            </header>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, vero!</p>
-            <footer><h3>Footer</h3></footer>
+            <footer>
+                <h3>Footer</h3>
+            </footer>
         </aw-card>
-        <aw-card title="Title2">
-            <img src='http://unsplash.it/300/300?random&gravity=center' alt=''/>
-            <footer><h3>Footer</h3></footer>
-        </aw-card>
-        <aw-card title="Title1">
-            <header><h3>Header</h3></header>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, vero!</p>
-            <footer><h3>Footer</h3></footer>
-        </aw-card>
-        <aw-card title="Title2">
-            <img src='http://unsplash.it/300/300?random&gravity=center' alt=''/>
-            <footer><h3>Footer</h3></footer>
-        </aw-card>
-    </div>
+    </div> -->
+    <aw-panel>
+        <aw-tab name="Tab1" [selected] = "true">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus perspiciatis odit autem nesciunt nobis doloribus.</p>
+        </aw-tab>
+        <aw-tab name="Tab2" [selected] = "false">
+            <p>Lorem ipsum dolor sit.</p>
+        </aw-tab>
+        <aw-tab name="Tab3" [selected] = "false">
+            <img src='http://unsplash.it/200/200?random&gravity=center' alt='random image'/>
+        </aw-tab>
+    </aw-panel>
 </div>
