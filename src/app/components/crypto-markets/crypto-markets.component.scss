@@ -1,0 +1,16 @@
+.crypto-markets{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__coin{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+img {
+    width: 32px;
+    height: 32px;
+}

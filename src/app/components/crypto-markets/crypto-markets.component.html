@@ -1,0 +1,7 @@
+<div class="crypto-markets" *ngIf="markets">
+    <div *ngFor="let market of markets; let i = index" class="crypto-markets__coin">
+        <img [src]="market.image">
+        <span>  {{ market.name }} </span>
+        <span> {{ market.current_price | currency:(currency | uppercase): 'symbol':'.1-8' }} </span>
+    </div>
+</div>

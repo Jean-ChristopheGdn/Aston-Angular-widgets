@@ -1,0 +1,23 @@
+.colors{
+        &__squares{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        &__1{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+        &__2{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+        &__3{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+    }
+}
