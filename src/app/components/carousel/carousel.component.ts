@@ -1,14 +1,20 @@
-import { Component, ContentChildren, Input, OnInit, QueryList } from '@angular/core';
+import { Component, Input, OnInit, QueryList } from '@angular/core';
+import { fadeIn } from 'src/app/lib/aw-tags/aw-core/aw-animations';
 
 @Component({
   selector: 'aw-carousel',
   templateUrl: './carousel.component.html',
-  styleUrls: ['./carousel.component.scss']
+  styleUrls: ['./carousel.component.scss'],
+  animations: [
+    fadeIn,
+  ],
 })
 export class CarouselComponent implements OnInit {
   
   @Input() carouselArray: string[] = ["http://unsplash.it/2000/1000?random&gravity=center","http://unsplash.it/2000/1001?random&gravity=center","http://unsplash.it/2000/1002?random&gravity=center"];
   indexImage: number = 0;
+
+  
   constructor() { }
 
   ngOnInit(): void {

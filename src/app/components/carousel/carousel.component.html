@@ -4,7 +4,7 @@
     </svg>
     <ng-container *ngFor="let image of carouselArray; let i = index">
         <ng-container *ngIf=" i == indexImage">
-            <img class="carousel__image" [src]="image">
+            <img @fadeIn class="carousel__image" [src]="image">
        </ng-container>
     </ng-container>
     <svg class="carousel__btn_right" (click)="onRight()">
